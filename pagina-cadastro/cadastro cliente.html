@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro cliente.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="botaohome" href="#">Home Page</a>
+        </nav>
+    </header>
+<div class="container">
+    <h1>Cadastro Cliente</h1>
+    <form id="formcadastro" action="" method="">
+    <div class="linha-completa">
+        <label for="email"> <i class="fas fa-envelope"></i> Email</label>
+        <input type="email" name="email" id="email" placeholder="Example@hotmail.com" data-min-lenght="33">
+    </div>
+    <div class="metade-da-linha">
+        <label for="Name"><i class="fas fa-user"></i>Nome</label>
+        <input type="text" name=Name" id="Nome" placeholder="Insira Seu Nome Completo">
+    </div>
+    <div class="metade-da-linha">
+        <label for="password"><i class="fas fa-lock"></i>Senha</label>
+        <input type="password" name="password" id="senha" placeholder="Insira Sua Senha">
+    </div>
+    <div class="metade-da-linha">
+        <label for="confirmpass"><i class="fas fa-lock"></i>Confirme Sua Senha</label>
+        <input type="password" name="confirmpass" id="senha2" placeholder="Confirme Sua Senha">
+    <div class="caixa-de-confirmacao"></div>
+    <input type="checkbox" name="confirmbox" id="confirmbox">
+    <label for="confirmbox" id="confirmlabel">Li e aceitos <a href="#"> termos de uso </a></label>
+    <div class="button">
+        <input type="submit" id="botao" value="Confirmar Cadastro">
+    </div>
+    <div class="possui-conta">
+        <label for="temconta" name="temconta" id="account"> Já possui uma conta? <a href="#">Clique aqui</a></label>
+    </div>
+</div>
+</form>
+<p class="erro-de-validacao template"></p>
+</header>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+</html>
